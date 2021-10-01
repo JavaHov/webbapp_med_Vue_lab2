@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Josefin+Sans:ital,wght@0,400;1,200&family=Mulish:wght@200&family=Open+Sans+Condensed:wght@700&display=swap');
+body{
+    background-color: beige;
+    margin: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-size: medium;
+    font-stretch: semi-expanded;
+}
+
+.item1 { grid-area: header; }
+.item2 {
+    grid-area: list;
+}
+
+h1, h2, h3, h4 {
+
+    color: darkgoldenrod;
+}
+.item3 { grid-area: text_buttons; }
+
+.item4 { grid-area: image_holder; }
+
+.grid-container {
+
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'text_buttons text_buttons list list'
+    'text_buttons text_buttons list list'
+    'image_holder image_holder list list';
+    border: groove burlywood;
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+.start_img {
+    max-width: 70%;
+    height: auto;
+}
+
+table {
+    border: 1px solid saddlebrown;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid saddlebrown;
+    padding: 10px;
+}
+
+.activity_select {
+
+    width: max-content;
+    padding: 5px;
+}
+
+.nameinput {
+
+
+}
+
+.ageinput {
+    width: 65px;
+}

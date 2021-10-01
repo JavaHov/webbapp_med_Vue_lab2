@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fritidsaktiviteter</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-container" id="app">
+    <div class="item1"><h2>Välkommen till fritidsaktiviteter!</h2></div>
+
+    <div class="item2">
+        <p><h3>DELTAGARE: </h3></p><br>
+        <table>
+            <tr
+                    is="leisure-activity"
+                    v-for="(activity, index) in activities"
+                    v-bind:key="activity.id"
+                    v-bind:name="activity.name"
+                    v-bind:age="activity.age"
+                    v-bind:text="activity.text"
+                    v-on:remove="activities.splice(index, 1)"
+            ></tr>
+        </table>
+    </div>
+
+    <div class="item3">
+        <label>Ny aktivitet:</label><br>
+
+        <select class="activity_select" name="activities" id="activities" v-model="newActivity" v-on:click="switchImage">
+            <option value="Löpning">Löpning</option>
+            <option value="Pingis">Pingis</option>
+            <option value="Kayak">Kayak</option>
+            <option value="Segling">Segling</option>
+            <option value="Simning">Simning</option>
+            <option value="Klättring">Klättring</option>
+        </select><br>
+
+        <label>Namn:</label><br>
+        <input class="nameinput" type="text" v-model="newName"><br>
+        <label>Ålder:</label><br>
+        <input class="ageinput" type="text" v-model="newAge">
+        <button v-if="newActivity.length > 0 && newName.length > 0" v-on:click="addActivity" >Lägg till</button><br><br>
+
+    </div>
+    <div class="item4">
+        <img src="img/fritidsaktiviteter.jpg" id="activity_images" class="start_img">
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<script src="js/activities.js"></script>
+
+</body>
+</html>

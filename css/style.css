@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Josefin+Sans:ital,wght@0,400;1,200&family=Mulish:wght@200&family=Open+Sans+Condensed:wght@700&display=swap');
 body{
+    background: url("/img/bg2.jpg");
     background-color: beige;
     margin: 20px;
     font-family: 'Cairo', sans-serif;
@@ -56,9 +57,10 @@ td {
 
 .nameinput {
 
-
 }
 
 .ageinput {
+
     width: 65px;
+
 }

@@ -1,6 +1,5 @@
 
 
-
     Vue.component('leisure-activity', {
 
     template: `
@@ -23,28 +22,23 @@
         id: 1,
         age: 53,
         text: 'Löpning'
-
     },
     {
-
         name: 'Anna',
         id: 2,
         age: 27,
         text: 'Cykling'
-
     },
     {
         name: 'Josefin',
         id: 3,
         age: 36,
         text: 'Vandring'
-
     }
     ],
         newId: 4,
         newName: '',
-        removeIndex: '',
-        newActivity: '',
+        newActivity: 'Löpning',
         newAge: ''
     },
     methods: {

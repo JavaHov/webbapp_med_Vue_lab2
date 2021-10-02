@@ -8,9 +8,9 @@
 <body>
 
 <div class="grid-container" id="app">
-    <div class="item1"><h2>Välkommen till fritidsaktiviteter!</h2></div>
+    <div class="header"><h1>VÄLKOMMEN TILL FRITIDSAKTIVITETER!</h1></div>
 
-    <div class="item2">
+    <div class="lista">
         <p><h3>DELTAGARE: </h3></p><br>
         <table>
             <tr
@@ -25,17 +25,18 @@
         </table>
     </div>
 
-    <div class="item3">
+    <div class="text_buttons">
         <label>Ny aktivitet:</label><br>
 
         <select class="activity_select" name="activities" id="activities" v-model="newActivity" v-on:click="switchImage">
-            <option value="Löpning">Löpning</option>
+            <option value="Löpning" selected="selected">Löpning</option>
             <option value="Pingis">Pingis</option>
             <option value="Kayak">Kayak</option>
             <option value="Segling">Segling</option>
             <option value="Simning">Simning</option>
             <option value="Klättring">Klättring</option>
         </select><br>
+
 
         <label>Namn:</label><br>
         <input class="nameinput" type="text" v-model="newName"><br>
@@ -44,8 +45,8 @@
         <button v-if="newActivity.length > 0 && newName.length > 0" v-on:click="addActivity" >Lägg till</button><br><br>
 
     </div>
-    <div class="item4">
-        <img src="img/fritidsaktiviteter.jpg" id="activity_images" class="start_img">
+    <div class="bild">
+        <img src="img/Löpning.jpg" id="activity_images" class="start_img">
     </div>
 </div>
 

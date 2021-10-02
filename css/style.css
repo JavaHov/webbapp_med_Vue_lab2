@@ -1,25 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Josefin+Sans:ital,wght@0,400;1,200&family=Mulish:wght@200&family=Open+Sans+Condensed:wght@700&display=swap');
 body{
     background: url("/img/bg2.jpg");
-    background-color: beige;
     margin: 20px;
     font-family: 'Cairo', sans-serif;
     font-size: medium;
     font-stretch: semi-expanded;
 }
 
-.item1 { grid-area: header; }
-.item2 {
+.header {
+
+    background: url("/img/fritidsaktiviteter2.jpg");
+    text-align: left;
+    grid-area: header;
+}
+.lista {
     grid-area: list;
 }
 
-h1, h2, h3, h4 {
-
+h2, h3, h4 {
     color: darkgoldenrod;
 }
-.item3 { grid-area: text_buttons; }
 
-.item4 { grid-area: image_holder; }
+h1 {
+
+    font-palette: light;
+    color: darkred;
+}
+
+.text_buttons { grid-area: text_buttons; }
+
+.bild { grid-area: image_holder; }
 
 .grid-container {
 
